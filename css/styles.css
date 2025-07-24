@@ -3044,7 +3044,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 500px) {
     .s-header {
-        --logo-width: 68px;
+        --logo-width: 108px;
     }
 
     .s-header__social li {
@@ -3059,7 +3059,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 400px) {
     .s-header {
-        --logo-width: 64px;
+        --logo-width: 104px;
     }
 }
 
