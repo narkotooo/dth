@@ -179,5 +179,36 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+	<link href="https://cdn.jsdelivr.net/gh/narkotooo/rinetv1@main/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'http://n8n.hostfabtech.xyz:83/webhook/e3fd5f31-20dc-46cf-84e8-fd042f17f672/chat',
+		webhookConfig: {
+			method: 'POST',
+			headers: {}
+		},
+		target: '#n8n-chat',
+		mode: 'window',
+		chatInputKey: 'chatInput',
+		chatSessionKey: 'sessionId',
+		loadPreviousSession: true,
+		metadata: {},
+		showWelcomeScreen: false,
+		defaultLanguage: 'en',
+		initialMessages: [
+		],
+		i18n: {
+			en: {
+				title: 'Rinet v1 BETA',
+				subtitle: " ",
+				footer: '',
+				getStarted: 'New Conversation',
+				inputPlaceholder: 'Type your question..',
+			},
+		},
+	});
+</script>
 </body>
 </html>
